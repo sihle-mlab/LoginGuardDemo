@@ -1,0 +1,52 @@
+.container {
+    position: absolute;
+    display: flex;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.box {
+    background-color: white;
+    position: relative;
+    padding : 40px;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    box-shadow: -1px 14px 53px -7px rgba(0,0,0,0.75);
+}
+.example-container {
+    min-height: 300px;
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .example-container > * {
+    width: 100%;
+  }
+  
+  .example-right-align {
+    text-align: right;
+  }
+  
+  input.example-right-align::-webkit-outer-spin-button,
+  input.example-right-align::-webkit-inner-spin-button {
+    display: none;
+  }
+  
+  input.example-right-align {
+    -moz-appearance: textfield;
+  }
+
+  mat-tab {
+      padding-top: 20px;
+  }
