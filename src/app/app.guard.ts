@@ -8,7 +8,6 @@ import { isLoggedin } from './app.variables';
 export class AuthenticationGuard implements CanActivate, CanActivateChild {
 
     constructor(public router: Router) {
-        firebase.initializeApp(environment.firebase);
     }
     
 

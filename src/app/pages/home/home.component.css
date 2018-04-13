@@ -44,7 +44,7 @@ a {
     color: white;
 }
 
-.container {
+.holder {
     background-color: white;
     display: flex;
     align-content: center;

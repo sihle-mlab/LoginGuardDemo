@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import * as firebase from 'firebase/app';
 import { Router } from '@angular/router';
 import { MatTableDataSource } from '@angular/material';
 import { AngularFireDatabase } from 'angularfire2/database';
 import { Observable } from 'rxjs/Observable';
+import { AngularFireAuth } from 'angularfire2/auth';
 
 @Component({
   selector: 'app-home',
@@ -15,7 +15,7 @@ export class HomeComponent implements OnInit {
   public name: string;
 
 
-  constructor(public database: AngularFireDatabase) { }
+  constructor(public database: AngularFireDatabase, public afAuth : AngularFireAuth) { }
 
 
   displayedColumns = ['name', 'location', 'phone', 'level'];
@@ -31,7 +31,7 @@ export class HomeComponent implements OnInit {
 
 
   ngOnInit() {
-    var user = firebase.auth().currentUser;
+    var user = this.afAuth.auth.currentUser;
     if(user != null){
       this.name = user.displayName;
     } else {
