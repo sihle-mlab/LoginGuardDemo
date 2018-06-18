@@ -9,7 +9,7 @@
 }
 
 .left-pane {
-    width: 400px;
+    flex-grow: 1;
     height: 100%;
     padding-top: 50px;
     border-right: white;
@@ -35,7 +35,7 @@
 }
 
 .main-pane {
-    flex-grow: 3;
+    flex-grow: 9;
     height: 100%;
     background-color: white;
 }
@@ -83,4 +83,16 @@ mat-header-cell {
   
 .example-spacer {
     flex: 1 1 auto;
+}
+
+#navigation {
+    width: 100%;
+    margin-right: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+mat-card {
+    margin-top: 5px;
 }

@@ -13,13 +13,9 @@ export class AuthenticationGuard implements CanActivate, CanActivateChild {
 
 
     canActivate() {
-        // if(isLoggedin.state == true) {
-        //     return true;
-        // } else {
-        //     return false;
-        // }
         var user = firebase.auth().currentUser;
         if (user) {
+            console.log("This does come to the guard just that it logs in");
             return true;
         } else {
             // No user is signed in.

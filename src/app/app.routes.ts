@@ -8,8 +8,8 @@ export const AppRoutes = [
 
       {
         path: "",
-        canActivate: [AuthenticationGuard],
-        component: HomeComponent
+        component: HomeComponent,
+        canActivate: [AuthenticationGuard]
       }, {
           path: "login",
           component: LoginComponent

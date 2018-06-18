@@ -9,7 +9,7 @@ import { AppRoutes } from './app.routes';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
-import {MatButtonModule, MatCheckboxModule, MatFormFieldModule, MatIconModule, MatInputModule, MatTabsModule, MatToolbarModule, MatTableModule} from '@angular/material';
+import {MatButtonModule, MatCheckboxModule, MatFormFieldModule, MatIconModule, MatInputModule, MatTabsModule, MatCardModule, MatToolbarModule, MatTableModule} from '@angular/material';
 import { HomeComponent } from './pages/home/home.component';
 import { ProfileComponent } from './pages/profile/profile.component';
 import { AngularFireModule } from 'angularfire2';
@@ -36,7 +36,7 @@ import { AuthService } from './app.auth';
     BrowserModule,
     ReactiveFormsModule, FormsModule,
     //Material Design Modules
-    MatButtonModule, MatCheckboxModule, MatFormFieldModule, MatIconModule, MatInputModule, MatTabsModule, MatToolbarModule, MatTableModule,
+    MatButtonModule, MatCheckboxModule, MatCardModule, MatFormFieldModule, MatIconModule, MatInputModule, MatTabsModule, MatToolbarModule, MatTableModule,
 
     //AngularFire Modules
     // imports firebase/app needed for everything, 

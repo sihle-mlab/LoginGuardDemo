@@ -10,4 +10,8 @@ import { environment } from '../environments/environment';
 export class AppComponent {
   title = 'app';
 
+  constructor(){
+    firebase.initializeApp(environment.firebase);
+  }
+
 }
